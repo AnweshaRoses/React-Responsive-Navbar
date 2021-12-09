@@ -6,6 +6,7 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
+import Home from './components/Pages/Home'
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
 
       <Navbar/>
       <Routes>
-        <Route path='/' exact/>
+        <Route path='/' exact component={Home}/>
       </Routes>
     </Router>
       </>
